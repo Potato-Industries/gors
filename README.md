@@ -7,7 +7,7 @@ Why Go? Check it out over at his blog.
 - https://github.com/sathish09/rev2go
 
 AV bypass, consider the following.
-https://github.com/unixpickle/gobfuscate
+- https://github.com/unixpickle/gobfuscate
 
 **Generate server certificate or disable client validation (yahoo! pew pew pew!)**
 ```
