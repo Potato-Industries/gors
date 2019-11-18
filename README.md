@@ -3,7 +3,7 @@
 A TLS enabled implementation of a clean go reverse shell "rev2go" by sathish09.
 
 **Supports**
-- Commands with arguments
+- Interactive shell (use "gorss.go")
 - TLS connectivity
 
 **Why Go?** 
@@ -39,5 +39,7 @@ socat openssl-listen:443,reuseaddr,fork,cert=/tmp/gors/server.pem,cafile=/tmp/go
 ```
 
 ![image](https://user-images.githubusercontent.com/56988989/69015224-f394b480-0989-11ea-8e42-71038b778e06.png)
+
+
 
 Enjoy~
