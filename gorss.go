@@ -43,7 +43,7 @@ tq9gneGOHkL1
     roots := x509.NewCertPool()
     ok := roots.AppendCertsFromPEM([]byte(rootCA))
     if !ok {
-        panic("failed to parse root certificate")
+        panic("")
     }
 
     tlscfg := &tls.Config{
