@@ -32,7 +32,7 @@ openssl req -new -x509 -sha256 -key server.key -out server.crt -days 3650
 Update script:
 - Configure your listener domain/ip:port
 - Configure SSL certificate public key or disable client validation
-- gorss-interactive.go: Update executable you want to use "/bin/bash", "/bin/sh", "cmd.exe", etc
+- gorss-interactive.go: Update script to use "/bin/bash", "/bin/sh", "cmd.exe", etc
 
 
 **Build for target platform**
