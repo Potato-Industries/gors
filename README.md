@@ -3,7 +3,7 @@
 A TLS enabled implementation of a clean go reverse shell "rev2go" by sathish09.
 
 **Supports**
-- Interactive shell (use "gorss.go")
+- Interactive shell (use "gorss-interactive.go")
 - TLS connectivity
 
 **Why Go?** 
@@ -32,6 +32,8 @@ env GOOS=windows GOARCH=386 go build -ldflags "-s -w" -o gors.exe gors.go
 ```
 Use build reference table for specific target architecture.
 * https://github.com/sathish09/rev2go#build
+
+For interactive shell modify gorss-interactive.go script to use target binary of your choice, /bin/bash, /bin/sh, cmd.exe, etc
 
 **Listener**
 ```
