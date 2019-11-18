@@ -22,7 +22,7 @@ func doCmd(cmdStr string) string {
 	cmd := exec.Command(arrCmdStr[0], arrCmdStr[1:]...)
 	o, e := cmd.CombinedOutput()
     	if e != nil {
-           return "Failed to run cmd."
+           return fmt.Sprintf("Error: %s\n", e)
     	}
         return string(o)
 }
