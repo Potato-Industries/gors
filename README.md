@@ -2,7 +2,9 @@
 
 A TLS enabled implementation of a clean go reverse shell "rev2go" by sathish09.
 
+
 **Features**
+
 - Interactive shell (use "gorss-interactive.go")
 - TLS connectivity
 
@@ -17,12 +19,21 @@ Check it out over at his blog.
 Consider leveraging..
 - https://github.com/unixpickle/gobfuscate
 
-**Generate server certificate or disable client validation (yahoo! pew pew pew!)**
+**Setup**
+
+Generate server certificate or disable client validation (yahoo! pew pew pew!)
+
 ```
 openssl genrsa -out server.key 2048 
 openssl ecparam -genkey -name secp384r1 -out server.key
 openssl req -new -x509 -sha256 -key server.key -out server.crt -days 3650
 ```
+
+Update script:
+- Configure your listener domain/ip:port
+- Configure SSL certificate public key or disable client validation
+- gorss-interactive.go: Update executable you want to use "/bin/bash", "/bin/sh", "cmd.exe", etc
+
 
 **Build for target platform**
 
@@ -33,7 +44,6 @@ env GOOS=windows GOARCH=386 go build -ldflags "-s -w" -o gors.exe gors.go
 Use build reference table for specific target architecture.
 * https://github.com/sathish09/rev2go#build
 
-For interactive shell modify gorss-interactive.go script to use target binary of your choice, /bin/bash, /bin/sh, cmd.exe, etc
 
 **Listener**
 ```
