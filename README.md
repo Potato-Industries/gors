@@ -2,9 +2,9 @@
 
 A TLS enabled implementation of a clean go reverse shell "rev2go" by sathish09.
 
-Supports.
-- commands with arguments
-- tls encryption
+**Supports**
+- Commands with arguments
+- TLS connectivity
 
 Why Go? Check it out over at his blog. 
 - https://medium.com/@sathish__kumar/undetectable-reverse-shell-with-golang-4fd4b1e172c1
