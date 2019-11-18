@@ -6,11 +6,15 @@ A TLS enabled implementation of a clean go reverse shell "rev2go" by sathish09.
 - Commands with arguments
 - TLS connectivity
 
-Why Go? Check it out over at his blog. 
+**Why Go?** 
+
+Check it out over at his blog. 
 - https://medium.com/@sathish__kumar/undetectable-reverse-shell-with-golang-4fd4b1e172c1
 - https://github.com/sathish09/rev2go
 
-AV bypass, consider the following.
+**AV bypass**
+
+Consider leveraging..
 - https://github.com/unixpickle/gobfuscate
 
 **Generate server certificate or disable client validation (yahoo! pew pew pew!)**
