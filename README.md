@@ -2,7 +2,7 @@
 
 A TLS enabled implementation of a clean go reverse shell "rev2go" by sathish09.
 
-**Supports**
+**Features**
 - Interactive shell (use "gorss-interactive.go")
 - TLS connectivity
 
