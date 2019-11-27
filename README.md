@@ -1,7 +1,4 @@
-# go reverse shell secure
-
-A TLS enabled implementation of a clean go reverse shell "rev2go" by sathish09.
-
+# gors
 
 **Features**
 
@@ -9,8 +6,7 @@ A TLS enabled implementation of a clean go reverse shell "rev2go" by sathish09.
 - TLS connectivity
 
 **Why Go?** 
-
-Check it out over at his blog. 
+ 
 - https://medium.com/@sathish__kumar/undetectable-reverse-shell-with-golang-4fd4b1e172c1
 - https://github.com/sathish09/rev2go
 
@@ -29,7 +25,7 @@ openssl ecparam -genkey -name secp384r1 -out server.key
 openssl req -new -x509 -sha256 -key server.key -out server.crt -days 3650
 ```
 
-Update script:
+Update:
 - Configure your listener domain/ip:port
 - Configure SSL certificate public key or disable client validation
 - gorss-interactive.go: Update script to use "/bin/bash", "/bin/sh", "cmd.exe", etc
