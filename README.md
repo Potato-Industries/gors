@@ -1,5 +1,7 @@
 # gors
 
+portable go based secure reverse shell (self-contained executable)
+
 **Features**
 
 - Interactive shell (use "gorss-interactive.go")
